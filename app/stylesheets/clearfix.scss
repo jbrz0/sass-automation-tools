@@ -1,0 +1,18 @@
+// Sass mixin for quickly applying clearfix
+
+// Clearfix mixin
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage
+.container-with-floated-children {
+  @extend %clearfix;
+}

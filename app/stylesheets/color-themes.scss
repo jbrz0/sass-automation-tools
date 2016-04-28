@@ -1,0 +1,28 @@
+// Define a multi-colored theme in your Sass stylesheet
+
+//Create the mixin for theme colors
+@mixin theme($name, $color) {
+  // Define colors in your theme
+  $primary: $color;
+  $secondary: lighten(adjust-hue($color, 20), 10%);
+  // Add your classes with css colors added
+  .#{$name} {
+    .element {
+      color: $primary;
+    }
+    .other-element {
+      background: $secondary;
+    }
+  }
+}
+
+// Using the theme
+@include theme(theme-banana, yellow);
+
+// Output
+.theme-banana .element {
+  color: yellow;
+}
+.theme-banana .other-element {
+  background: #bbff33;
+}

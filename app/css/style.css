@@ -1,0 +1,139 @@
+/* All the mixins are seperated
+
+- Media queries
+- Color themes
+- Centering elements
+- Clearfix
+- Consistent font sizes
+- Animation transitions
+- Retina images
+- Quick gradients
+- External fonts
+- Quick padding/margins
+
+ */
+@media screen and (max-width: 1175px) {
+  .foo {
+    width: 20%; } }
+
+@media screen and (max-width: 1175px) {
+  .foo {
+    width: 40%; } }
+
+@media screen and (max-width: 960px) {
+  .foo {
+    width: 60%; } }
+
+@media screen and (max-width: 600px) {
+  .foo {
+    width: 80%; } }
+
+@media screen and (max-width: 400px) {
+  .foo {
+    width: 100%; } }
+
+.theme-banana .element {
+  color: yellow; }
+
+.theme-banana .other-element {
+  background: #bbff33; }
+
+.theme-banana .element {
+  color: yellow; }
+
+.theme-banana .other-element {
+  background: #bbff33; }
+
+.foo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.foo-parent {
+  position: relative; }
+
+.container-with-floated-children {
+  *zoom: 1; }
+  .container-with-floated-children:before, .container-with-floated-children:after {
+    content: " ";
+    display: table; }
+  .container-with-floated-children:after {
+    clear: both; }
+
+p {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+p {
+  font-size: 14px;
+  font-size: 0.8rem; }
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+
+@-ms-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+
+@-o-keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+
+@keyframes slide-down {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; } }
+
+.element {
+  width: 100px;
+  height: 100px;
+  background: black;
+  -webkit-animation: slide-down 5s 3;
+  -moz-animation: slide-down 5s 3;
+  -ms-animation: slide-down 5s 3;
+  -o-animation: slide-down 5s 3;
+  animation: slide-down 5s 3; }
+
+div.logo {
+  background: url("logo.png") no-repeat; }
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    div.logo {
+      background-image: url("logo2x.png");
+      background-size: 100px 25px; } }
+
+.foo {
+  background: red;
+  background: -webkit-linear-gradient(top, red, black);
+  background: linear-gradient(to bottom, red, black); }
+
+.foo {
+  background: -webkit-linear-gradient(top, red, black);
+  background: linear-gradient(to bottom, red, black); }
+
+@font-face {
+  font-family: "gotham";
+  src: url("/fonts/gotham.eot");
+  src: url("/fonts/gotham.eot?#iefix") format("embedded-opentype"), url("/fonts/gotham.woff") format("woff"), url("/fonts/gotham.ttf") format("truetype"), url("/fonts/gotham.svg#gotham") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+padding: top right bottom left;
+padding: 1px 2px 3px 4px;
+padding: 1px 3px 4px;

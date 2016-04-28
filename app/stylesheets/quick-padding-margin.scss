@@ -1,0 +1,28 @@
+// Sass mixin for quickly adding padding and margins
+
+//Padding shorthand version
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+//Margin shorthand version
+@mixin margin($margin) {
+  margin: $margin;
+}
+
+//Usage definition
+@include padding(top right bottom left);
+
+//Usage 1
+@include padding(1px 2px 3px 4px);
+
+//Output 1
+// padding: 1px 2px 3px 4px;
+
+//Usage 2 (with null properties)
+@include padding(1px null 3px 4px);
+
+//Output 2
+// padding-top: 1px;
+// padding-bottom: 3px;
+// padding-left: 4px;

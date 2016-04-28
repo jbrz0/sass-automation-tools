@@ -1,0 +1,26 @@
+/* All the mixins are seperated
+
+- Media queries
+- Color themes
+- Centering elements
+- Clearfix
+- Consistent font sizes
+- Animation transitions
+- Retina images
+- Quick gradients
+- External fonts
+- Quick padding/margins
+
+ */
+
+@import 'media-queries.scss';
+@import 'color-themes.scss';
+@import 'centering-content.scss';
+@import 'clearfix.scss';
+@import 'consistent-font-sizes.scss';
+@import 'animation-transitions.scss';
+@import 'retina-images.scss';
+@import 'quick-gradients.scss';
+@import 'external-fonts.scss';
+@import 'quick-padding-margin.scss';
+

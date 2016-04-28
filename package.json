@@ -1,0 +1,16 @@
+{
+  "name": "gulp-server",
+  "version": "1.0.0",
+  "description": "A basic gulp server setup for web apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brz0/gulp-server"
+  },
+  "author": "Justin Brazeau",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.1"
+  }
+}
